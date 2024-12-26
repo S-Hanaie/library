@@ -33,8 +33,8 @@ echo '<script>alert("پروفایل شما با موفقیت بروزرسانی 
     <meta name="description" content="" />
     <meta name="author" content="" />
     <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->سامانه آنلاین مدیریت کتابخانه|پروفایل</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"-->
+        <title>سامانه آنلاین مدیریت کتابخانه|پروفایل</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
