@@ -1,0 +1,106 @@
+@font-face {
+
+    font-family: iransans_web;
+    src: url('../fonts/IRANSansWeb.ttf');
+
+}
+
+@font-face {
+
+    font-family: iransans_web_black;
+    src: url('../fonts/IRANSansWeb_Black.ttf');
+
+}
+
+@font-face {
+
+    font-family: iransans_web_bold;
+    src: url('../fonts/IRANSansWeb_Bold.ttf');
+
+}
+
+@font-face {
+
+    font-family: iransans_web_light;
+    src: url('../fonts/IRANSansWeb_Light.ttf');
+
+}
+
+@font-face {
+
+    font-family: iransans_web_medium;
+    src: url('../fonts/IRANSansWeb_Medium.ttf');
+
+}
+
+@font-face {
+
+    font-family: iransans_web_ultralight;
+    src: url('../fonts/IRANSansWeb_UltraLight.ttf');
+
+}
+
+
+.iransans_web{
+    font-family: iransans_web;
+}
+
+.iransans_web_black{
+    font-family: iransans_web_black;
+}
+
+.iransans_web_bold{
+    font-family: iransans_web_bold;
+}
+
+.iransans_web_medium{
+    font-family: iransans_web_medium;
+}
+
+.iransans_web_ultralight{
+    font-family: iransans_web_ultralight;
+}
+
+.iransans_web_light{
+    font-family: iransans_web_light;
+}
+
+.font_xxs{
+    font-size: xx-small;
+}
+
+.font_xs{
+    font-size: x-small;
+}
+
+.font_s{
+    font-size: small;
+}
+
+.font_m{
+    font-size: medium;
+}
+
+.font_l{
+    font-size: large;
+}
+
+.font_le{
+    font-size: larger;
+}
+
+.font_xl{
+    font-size: x-large;
+}
+
+.font_xxl{
+    font-size: xx-large;
+}
+
+.font_koodak{
+    font-family: "B Koodak";
+}
+
+.font_koodak_outline{
+    font-family: "B Koodak Outline";
+}

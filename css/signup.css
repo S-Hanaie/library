@@ -1,0 +1,179 @@
+input:focus{
+    outline: none;
+    border: none;
+}
+
+#main-signup{
+    background: url("../images/nature_5.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#form-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+i.fa-chevron-left , i.fa-chevron-right{
+    color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: xx-large;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+    text-shadow: none;
+    transition: left ease .25s;
+}
+
+div.btn-next-container , div.btn-prev-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+    transition: background-position ease .4s;
+}
+
+div.btn-next-container{
+    right: 0;
+    background: linear-gradient(to left  , rgba(0,0,0,.75) , rgba(0,0,0,.35) , transparent );
+    background-position: 75px;
+    background-repeat: no-repeat;
+}
+
+div.btn-prev-container{
+    left: 0;
+    background: linear-gradient(to right , rgba(0,0,0,.75) , rgba(0,0,0,.35) , transparent );
+    background-position: -75px;
+    background-repeat: no-repeat;
+}
+
+div.btn-prev-container:hover , div.btn-next-container:hover{
+    background-position: 0px;
+}
+
+div.btn-prev-container:hover i.fa-chevron-left{
+    left : 46%;
+}
+
+div.btn-next-container:hover i.fa-chevron-right{
+    left : 54%;
+}
+
+.form-section.section-hidden{
+    display: none;
+    opacity: 0;
+}
+
+i.fa-chevron-left.dsabled , i.fa-chevron-right.dssabled{
+    opacity: .25;
+    cursor: default;
+}
+
+i.fa-chevron-left.enabled , i.fa-chevron-right.enabled{
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .fa-chevron-right{
+        left: 95%;
+    }
+    .fa-chevron-left{
+        right: 95%;
+    }
+}
+
+#main-signup > div{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-indicators {
+    border-radius: 1rem;
+    background-color: #e9e7da;
+}
+
+.form-indicators li:first-child:before{
+    font-family: "Font Awesome 5 Free" ;
+    content: '\f3cd';
+}
+
+.form-indicators li:nth-child(2):before{
+    font-family: "Font Awesome 5 Free" ;
+    content: '\f075';
+}
+
+.form-indicators li:nth-child(3):before{
+    font-family: "Font Awesome 5 Free" ;
+    content: '\f2bb';
+}
+
+.form-indicators li{
+    float: left;
+    position: relative;
+    color: #373f27;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+}
+
+.form-indicators li:before{
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    border : 1px solid #373f27;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 5px auto;
+    background-color: #e9e7da;
+    font-weight: 900;
+    color: #373f27;
+}
+
+.form-indicators li:after{
+    content: '';
+    width: calc(100% - 35px);
+    height: 2px;
+    position: absolute;
+    background-color: #373f27;
+    top: 17.5px;
+    left: calc(-50% + 17.5px);
+    -webkit-transition: background-size ease 1s;
+    -moz-transition: background-size ease 1s;
+    -ms-transition: background-size ease 1s;
+    -o-transition: background-size ease 1s;
+    transition: background-size ease 1s;
+}
+
+.form-indicators li.active:after{
+    background-size: 100% 100%;
+}
+
+.form-indicators li:first-child:after{
+    content: none;
+}
+
+.form-indicators li.active , .form-indicators li.active:before{
+    color: #cda34f;
+    font-weight: bold;
+}
+
+.form-indicators li.active:before{
+    border: 2px solid #cda34f;
+    background-color: #e9e7da;
+}
+
+.border-danger-custom-width{
+    border-width: 2px !important;
+}
+
+.bg-danger-light{
+    background-color: #ddb9af;
+}
