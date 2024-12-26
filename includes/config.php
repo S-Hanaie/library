@@ -1,5 +1,5 @@
 <?php 
-// گرفتن متغیرهای محیطی از Railway
+
 $server = getenv('MYSQLHOST'); // Automatically set by Railway
 $user = getenv('MYSQLUSER'); // Automatically set by Railway
 $pass = getenv('MYSQL_ROOT_PASSWORD'); // Automatically set by Railway
