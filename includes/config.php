@@ -1,16 +1,15 @@
 <?php 
-// DB credentials.
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','library');
+// گرفتن متغیرهای محیطی از Railway
+$server = getenv('MYSQLHOST'); // Automatically set by Railway
+$user = getenv('MYSQLUSER'); // Automatically set by Railway
+$pass = getenv('MYSQL_ROOT_PASSWORD'); // Automatically set by Railway
+$dbname = getenv('MYSQLDATABASE'); // Automatically set by Railway
+
 // Establish database connection.
-try
-{
-$dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER, DB_PASS,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8mb4'"));
-}
-catch (PDOException $e)
-{
-exit("Error: " . $e->getMessage());
+try {
+    // استفاده از متغیرهای محیطی در رشته اتصال
+    $dbh = new PDO("mysql:host=$server;dbname=$dbname", $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8mb4'"));
+} catch (PDOException $e) {
+    exit("Error: " . $e->getMessage());
 }
 ?>
